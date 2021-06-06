@@ -24,7 +24,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-
+\usepackage{amsmath}
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
@@ -42,14 +42,13 @@
 \firstname{Nikolay} % Your first name
 \familyname{Goryan} % Your last name
 % All information in this block is optional, comment out any lines you don't need
-\title{Ocean Engineering}
-\address{12 Chain Bridge Drive}{Newburyport, Massachusetts 01950}
-\mobile{(978)-270-0371}
-\email{$shane \textunderscore thirkell@my.uri.edu$}
+\title{Software Engineer}
+\address{429 Linzer Strasse}{Vienna, Austria 1140}
+\mobile{+43(676)-535-4080}
+\email{$goryan.na@phystech.edu$}
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"Quite often in nature, when waves are reflected from obstacles, not all wave energy is reflected: some is \textcolor{olive}{absorbed} by the obstacle and some is \textcolor{olive}{transmitted past} the obstacle."
-\newline
-- \textcolor{olive}{Dean and Dalrymple}}
+%- \textcolor{olive}{Dean and Dalrymple}}
 
 %----------------------------------------------------------------------------------------
 
@@ -61,48 +60,77 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
+\section{Interest}
+\begin{itemize}
+  \item Web Development and Design
+  \item Compiler Research
+  \item Deep Learning
+\end{itemize}
+
 \section{Education}
 
-\cventry{2015-2018}{Bachelor of Science}{University of Rhode Island}{Narragansett, RI}{\textit{GPA - 3.42}}{\bfseries Ocean Engineering, Renewable Energy Track}  % Arguments not required can be left empty
+\cventry{2015-2020}{Bachelor of Science}{Moscow Institute of Physics and Technology (State University)}{Moscow, Russia}{GPA - 3.5}{\bfseries Applied Mathematics and Physics}  % Arguments not required can be left empty
+\cventry{2019-2023}{Bachelor of Science}{University of Music and Performing Arts}{Vienna, Austria}{}{\bfseries Opera singing}
 %------------------------------------------------
 
-\subsection{Junior Spring Semester Project}
+\subsection{Courses}
 
-\cventry{2018}{Flow Mapping (Particle Image Velocimetry)}{Research Experiment}{}{}{This was an experiment in fluid dynamics with respect to a cylinder subjected to a constant flow. The water is seeded with small particles that are illuminated by a powerful laser. A cylinder is moved mechanically in various patterns mimicking theoretical 'free vibration' due to vortex shedding. The images are processed and analyzed in MATLAB and the resulting turblence/vorticity can be visualized. The forces experienced by the body are widely applicable (energy generation, structural pile requirements). Results were used in graduate student Erdem Aktosun's research.}
-
+\cventry{2021}{Java Basic Course}{Computer Science Center}{stepik.org}{}{}
+\cventry{2020}{The Art of Software Development using C++}{Yandex and MIPT}{coursera.org}{5-course specialization}{}{}
+\cventry{2020}{Introduction to Git and Github}{Google}{coursera.org}{}{}{}
+\cventry{2018}{Supervised Learning}{Yandex and MIPT}{coursera.org}{}{}
+\cventry{2018}{Mathematics and Python for Data Analysis}{Yandex and MIPT}{coursera.org}{}{}
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Certifications, Achievements, Interests}
-\cvitem{2013}{Managing/maintaining small-scale hydroponic or aquatic systems}
-\cvitem{2014}{Next Step Living volunteer, outreach representative for solar energy assessments}
-\cvitem{2015}{Technical rock climbing safety logistics, forklift operation}
-\cvitem{2016}{Member of National Society of Collegiate Scholars}
-\cvitem{2016}{Member of Tau Kappa Epsilon Fraternity}
-\cvitem{2018}{Dean's List 7 semesters}
-\cvitem{2018}{Class IV Laser Radiation Safety Certification}
+\section{Experience}
+\cventry{2018-2020}{Internship}{Institute for System Programming}{Moscow}{}{Worked on the development of detectors that are aimed at finding defects in software in the Kotlin programming language. Static code analysis was chosen as an approach for the implementation of detectors. Using the Kotlin compiler tools, a set of detectors was implemented.(topic of my Bachelor’s Thesis).}
+
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Skills}
 
-\cvitem{Softwares:}{MATLAB, Excel/Office, STWAVE (modelling) PTC Creo (Limited), Python (Limited)}
-\subsection{Equipment/Hardware Skills}
-\cvitem{Wave Tank:}{Hydraulic Wavemaker, Load cell, Wave-guage operation}
-\cvitem{Flow Map:}{Flow Tank, Dye pumps (visualization), Class IV Laser operation}
-\cvitem{Acoustics:}{Oscilloscope, Function Generator, Humminbird 1158c Transducer}
+\section{Computer skills}
+
+\cvdoubleitem{PL}{Java, Kotlin, C++, Python} {Type Setting}{LaTeX, Microsoft Office}
+\cvdoubleitem {Familiar With}{Numpy, Matplotlib, Panda, Sclearn}{OS}{Linux, Unix, Microsoft Windows}
+\cvdoubleitem{IDE}{Vim, Eclipse, IntelliJ IDEA, Xcode}{Database}{MySQL}
+\cvdoubleitem{Math}{Algorithms, Data Structures}{}{}
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Languages}
+\cvitemwithcomment{Russian:}{\mdseries First Language}{(Strong writing skills)}
+\cvitemwithcomment{Ukrainian:}{\mdseries First Language}{(Strong writing skills)}
+\cvitemwithcomment{English:}{}{(B2 Cambridge Certificate)}
+\cvitemwithcomment{German:}{}{(B2)}
 
-\cvitemwithcomment{English:}{\mdseries First Language}{(Strong writing skills)}
-\cvitemwithcomment{German:}{\mdseries 5 years grammar coursework, exchange completed}{(European Union Reference Level C1)}
 
+\section{Others}
+\cventry{2019-2023}{Bachelor of Science}{University of Music and Performing Arts}{Vienna, Austria}{}{\bfseries Opera singing}
 
+\section{References}
+
+% \begin{tabular}{lr}
+% Referee 1
+\begin{minipage}[t]{3in}
+\textbf{PhD Sergey S. Gaissaryan}\\
+\textit{Associate Professor, Compiler Technology Department} \\
+\textit{ssg@ispras.ru}\\
+Institute for System Programming RAS\\
+% \letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+\end{minipage}
+
+% \cvreference{ \bfseries S. S. Gaissaryan}\\
+%     {Professor}\\
+%     {Department of Compiler Technologies}\\
+%     {ISP RAS}\\
+%     {Moscow, Russia 109004}\\
+%     {ssg@ispras.ru}\\
+%     {+7(916)205-2035}%
 
 \end{document}
